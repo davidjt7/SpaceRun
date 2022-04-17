@@ -102,11 +102,11 @@ class MainWidget(RelativeLayout):
         Clock.schedule_interval(self.update, 1.0 / self.FRAMES)
 
     def init_audio(self):
-        self.sound_begin = SoundLoader.load("audio/begin.mp3")
-        self.sound_gameover_impact = SoundLoader.load("audio/gameover_impact.mp3")
-        self.sound_gameover_voice = SoundLoader.load("audio/gameover_voice.mp3")
-        self.sound_play_state_music = SoundLoader.load("audio/play_state_music.mp3")
-        self.sound_menu_theme = SoundLoader.load("audio/menu_theme.mp3")
+        self.sound_begin = SoundLoader.load("audio/begin.wav")
+        self.sound_gameover_impact = SoundLoader.load("audio/gameover_impact.wav")
+        self.sound_gameover_voice = SoundLoader.load("audio/gameover_voice.wav")
+        self.sound_play_state_music = SoundLoader.load("audio/play_state_music.wav")
+        self.sound_menu_theme = SoundLoader.load("audio/menu_theme.wav")
 
         self.sound_play_state_music.volume = 0.6
         self.sound_menu_theme.volume = 0.2
