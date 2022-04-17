@@ -1,0 +1,27 @@
+#:kivy 2.1.0
+
+<MenuWidget>:
+    canvas.before:
+        Color:
+            rgba: 0, 0, 0, .8
+        Rectangle:
+            size: self.size
+    Label:
+        font_size: dp(60)
+        font_name: 'fonts/Capsule.ttf'
+        text: root.parent.menu_title
+        pos_hint: {"center_x" : .5, "center_y": .6}
+    Label:
+        font_size: dp(30)
+        font_name: 'fonts/WarsawGothic.ttf'
+        text: root.parent.score
+        pos_hint: {"center_x" : .5, "center_y": .45}
+    Button:
+        font_size: dp(40)
+        font_name: 'fonts/WarsawGothic.ttf'
+        text: root.parent.menu_button_title
+        pos_hint: {"center_x" : .5, "center_y": .3}
+        size_hint: .2, .15
+        on_press: root.parent.on_menu_button_pressed()
+        background_normal: ''
+        background_color: .5, .2, 1, .85
