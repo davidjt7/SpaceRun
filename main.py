@@ -249,7 +249,7 @@ class MainWidget(RelativeLayout):
         with self.canvas:
             Color(0, 0, 0)
             for i in range(0, self.NUM_VERTICAL_LINES):
-                self.vertical_lines.append(Line())
+                self.vertical_lines.append(Line(width=1.25))
 
     def update_tiles(self):
         for i in range(0, self.NUM_TILES):
@@ -282,7 +282,7 @@ class MainWidget(RelativeLayout):
         with self.canvas:
             Color(0, 0, 0)
             for i in range(0, self.NUM_HORIZONTAL_LINES):
-                self.horizontal_lines.append(Line())
+                self.horizontal_lines.append(Line(width=1.25))
 
     def update_horizontal_lines(self):
         start_index = -int(self.NUM_VERTICAL_LINES / 2) + 1
