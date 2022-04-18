@@ -84,7 +84,6 @@ class MainWidget(RelativeLayout):
 
     def __init__(self, **kwargs):
         super(MainWidget, self).__init__(**kwargs)
-        self.icon = "images/icon.png"
         self.init_audio()
         self.sound_menu_theme.play()
 
